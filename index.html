@@ -29,34 +29,120 @@
         </div>
     </header>
 
-    <!-- Sección de profesores -->
-    <section class="destinos-header">
-        <h2 id="profesores">Nuestros Profesores Estrella</h2>
-        <p>Ofertas increíbles para tu futuro.</p>
+    <!-- Sección de Directorio de Profesores -->
+    <section class="profesores-header" id="profesores">
+        <div class="header-content">
+            <h2>Directorio de Profesores</h2>
+            <p>Conoce a nuestros expertos en distintas áreas del conocimiento</p>
+        </div>
     </section>
 
-    <!-- Sección de servicios -->
-    <main class="servicios">
-
-        <!-- Tarjeta 1:  -->
-        <div class="card">
-            <div class="card-image">
-                <img class="imgTarjeta" src="https://www.google.com/imgres?q=profesores&imgurl=https%3A%2F%2Fplanlea.edu.do%2Fwp-content%2Fuploads%2F2016%2F08%2FThinkstockPhotos-77146914.jpg&imgrefurl=https%3A%2F%2Fplanlea.edu.do%2F2018%2F05%2Frespeto-hacia-los-profesores%2F&docid=D80jDmKLtFf7HM&tbnid=iF5NjaZnFLx2CM&vet=12ahUKEwirq5j51c2TAxU1rZUCHUsgIyoQnPAOegQIGBAB..i&w=1500&h=1000&hcb=2&ved=2ahUKEwirq5j51c2TAxU1rZUCHUsgIyoQnPAOegQIGBAB" alt="Profesor de inglés" loading="lazy">
-                <div class="ribbon">OFERTA HOT</div>
+    <!-- Grid de Profesores -->
+    <main class="profesores-grid">
+        
+        <!-- Profesor 1: Matemáticas -->
+        <div class="profesor-card">
+            <div class="profesor-image-container">
+                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=500&h=500&fit=crop" alt="Profesor de Matemáticas" class="profesor-image">
+                <span class="badge badge-matematicas">Matemáticas</span>
             </div>
-            <div class="card-content">
-                <h3> profesor de ingles </h3>
-                <p class="description">Experto en enseñanza de inglés con más de 10 años de experiencia.</p>
-                <div class="pricing">
-                    <span class="currency">RD$</span>
-                    <span class="price">45,999</span>
-                    <span class="original-price">RD$ 59,999</span>
+            <div class="profesor-content">
+                <h3 class="profesor-nombre"> Carolina Mendez</h3>
+                <p class="profesor-experiencia">Especialista en Cálculo y Álgebra con 15 años de experiencia en educación superior.</p>
+                <div class="profesor-precio">
+                    <span class="precio-label">Tarifa por Hora</span>
+                    <span class="precio-valor">RD$ 750</span>
                 </div>
-                <button class="btn-reserva">Reservar Ahora</button>
+                <button class="btn-perfil">Ver Perfil</button>
             </div>
         </div>
 
+        <!-- Profesor 2: Inglés -->
+        <div class="profesor-card">
+            <div class="profesor-image-container">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&h=500&fit=crop" alt="Profesor de Inglés" class="profesor-image">
+                <span class="badge badge-ingles">Inglés</span>
+            </div>
+            <div class="profesor-content">
+                <h3 class="profesor-nombre">Gustavo Prieto</h3>
+                <p class="profesor-experiencia">Certificada Cambridge English. Enseña con métodos conversacionales interactivos desde 2008.</p>
+                <div class="profesor-precio">
+                    <span class="precio-label">Tarifa por Hora</span>
+                    <span class="precio-valor">RD$ 650</span>
+                </div>
+                <button class="btn-perfil">Ver Perfil</button>
+            </div>
+        </div>
 
+        <!-- Profesor 3: Física -->
+        <div class="profesor-card">
+            <div class="profesor-image-container">
+                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=500&h=500&fit=crop" alt="Profesora de Física" class="profesor-image">
+                <span class="badge badge-fisica">Física</span>
+            </div>
+            <div class="profesor-content">
+                <h3 class="profesor-nombre"> María Hernández</h3>
+                <p class="profesor-experiencia">Investigadora en Mecánica Cuántica. Docencia clara y dinámica con enfoque experimental.</p>
+                <div class="profesor-precio">
+                    <span class="precio-label">Tarifa por Hora</span>
+                    <span class="precio-valor">RD$ 800</span>
+                </div>
+                <button class="btn-perfil">Ver Perfil</button>
+            </div>
+        </div>
+
+        <!-- Profesor 4: Programación -->
+        <div class="profesor-card">
+            <div class="profesor-image-container">
+                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=500&h=500&fit=crop" alt="Profesor de Programación" class="profesor-image">
+                <span class="badge badge-programacion">Programación</span>
+            </div>
+            <div class="profesor-content">
+                <h3 class="profesor-nombre"> José López</h3>
+                <p class="profesor-experiencia">Desarrollador Full Stack con expertise en Python, JavaScript y React. Enseña desde 2015.</p>
+                <div class="profesor-precio">
+                    <span class="precio-label">Tarifa por Hora</span>
+                    <span class="precio-valor">RD$ 900</span>
+                </div>
+                <button class="btn-perfil">Ver Perfil</button>
+            </div>
+        </div>
+
+        <!-- Profesor 5: Literatura -->
+        <div class="profesor-card">
+            <div class="profesor-image-container">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&h=500&fit=crop" alt="Profesor de Literatura" class="profesor-image">
+                <span class="badge badge-literatura">Literatura</span>
+            </div>
+            <div class="profesor-content">
+                <h3 class="profesor-nombre">Lic. Antonio García</h3>
+                <p class="profesor-experiencia">Crítico literario y docente universitario. Especializado en Literatura Hispanoamericana y Análisis Textual.</p>
+                <div class="profesor-precio">
+                    <span class="precio-label">Tarifa por Hora</span>
+                    <span class="precio-valor">RD$ 600</span>
+                </div>
+                <button class="btn-perfil">Ver Perfil</button>
+            </div>
+        </div>
+
+        <!-- Profesor 6: Biología -->
+        <div class="profesor-card">
+            <div class="profesor-image-container">
+                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=500&h=500&fit=crop" alt="Profesora de Biología" class="profesor-image">
+                <span class="badge badge-biologia">Biología</span>
+            </div>
+            <div class="profesor-content">
+                <h3 class="profesor-nombre">Dra. Isabela Mora</h3>
+                <p class="profesor-experiencia">Bióloga Marina con experiencia en docencia de Ecología, Genética y Biología Celular con laboratorio virtual.</p>
+                <div class="profesor-precio">
+                    <span class="precio-label">Tarifa por Hora</span>
+                    <span class="precio-valor">RD$ 700</span>
+                </div>
+                <button class="btn-perfil">Ver Perfil</button>
+            </div>
+        </div>
+
+    </main>
 
 </body>
 </html>

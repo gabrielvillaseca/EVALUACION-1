@@ -5,11 +5,13 @@
     box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap');
+
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', 'Inter', sans-serif;
     line-height: 1.6;
-    color: #333;
-    background-color: #f8f9fa;
+    color: #2c3e50;
+    background-color: #f8f9fb;
 }
 
 /* ==================== NAVBAR ==================== */
@@ -497,4 +499,280 @@ footer {
 /* ==================== SCROLL SUAVE ==================== */
 html {
     scroll-behavior: smooth;
+}
+
+/* ==================== SECCIÓN DIRECTORIO DE PROFESORES ==================== */
+
+/* Header de la Sección de Profesores */
+.profesores-header {
+    text-align: center;
+    padding: 70px 20px;
+    background: linear-gradient(135deg, #f8f9fb 0%, #eef1f8 100%);
+    border-bottom: 2px solid #e0e8f0;
+}
+
+.header-content h2 {
+    font-size: 48px;
+    color: #1a3a52;
+    font-weight: 800;
+    margin-bottom: 15px;
+    letter-spacing: -0.5px;
+}
+
+.header-content p {
+    font-size: 18px;
+    color: #5a6c7d;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+}
+
+/* Grid Responsivo de Profesores */
+.profesores-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 32px;
+    padding: 70px 30px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Tarjeta de Profesor */
+.profesor-card {
+    background: white;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(26, 58, 82, 0.08);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+}
+
+.profesor-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 20px 50px rgba(26, 58, 82, 0.15);
+}
+
+/* Contenedor de Imagen */
+.profesor-image-container {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1;
+    overflow: hidden;
+    background: linear-gradient(135deg, #e0e8f0 0%, #d0dce8 100%);
+}
+
+.profesor-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.profesor-card:hover .profesor-image {
+    transform: scale(1.08);
+}
+
+/* Badge de Área */
+.badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.badge-matematicas {
+    background: rgba(99, 110, 250, 0.9);
+    color: white;
+}
+
+.badge-ingles {
+    background: rgba(52, 211, 153, 0.9);
+    color: white;
+}
+
+.badge-fisica {
+    background: rgba(168, 85, 247, 0.9);
+    color: white;
+}
+
+.badge-programacion {
+    background: rgba(59, 130, 246, 0.9);
+    color: white;
+}
+
+.badge-literatura {
+    background: rgba(239, 68, 68, 0.9);
+    color: white;
+}
+
+.badge-biologia {
+    background: rgba(34, 197, 94, 0.9);
+    color: white;
+}
+
+/* Contenido de la Tarjeta */
+.profesor-content {
+    padding: 30px 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.profesor-nombre {
+    font-size: 22px;
+    font-weight: 700;
+    color: #1a3a52;
+    margin-bottom: 12px;
+    letter-spacing: -0.3px;
+}
+
+.profesor-experiencia {
+    font-size: 14px;
+    color: #5a6c7d;
+    line-height: 1.6;
+    margin-bottom: 22px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* Sección de Precio */
+.profesor-precio {
+    background: linear-gradient(135deg, #1a3a52 0%, #2c5282 100%);
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.precio-label {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.7);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.precio-valor {
+    font-size: 28px;
+    font-weight: 800;
+    color: white;
+    letter-spacing: -0.5px;
+}
+
+/* Botón Ver Perfil */
+.btn-perfil {
+    padding: 14px 24px;
+    background: white;
+    color: #1a3a52;
+    border: 2px solid #1a3a52;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+}
+
+.btn-perfil:hover {
+    background: linear-gradient(135deg, #1a3a52 0%, #2c5282 100%);
+    color: white;
+    box-shadow: 0 8px 20px rgba(26, 58, 82, 0.25);
+    transform: translateY(-2px);
+}
+
+.btn-perfil:active {
+    transform: translateY(0);
+}
+
+/* ==================== RESPONSIVE PROFESORES ==================== */
+@media (max-width: 1024px) {
+    .profesores-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 24px;
+        padding: 50px 20px;
+    }
+
+    .header-content h2 {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 768px) {
+    .profesores-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding: 40px 15px;
+    }
+
+    .profesores-header {
+        padding: 50px 15px;
+    }
+
+    .header-content h2 {
+        font-size: 28px;
+    }
+
+    .header-content p {
+        font-size: 16px;
+    }
+
+    .profesor-card {
+        border-radius: 14px;
+    }
+
+    .profesor-nombre {
+        font-size: 18px;
+    }
+
+    .precio-valor {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .profesores-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        padding: 30px 10px;
+    }
+
+    .header-content h2 {
+        font-size: 24px;
+    }
+
+    .header-content p {
+        font-size: 14px;
+    }
+
+    .profesor-content {
+        padding: 20px;
+    }
+
+    .profesor-experiencia {
+        font-size: 13px;
+        margin-bottom: 16px;
+    }
+
+    .profesor-precio {
+        padding: 16px;
+    }
+
+    .precio-valor {
+        font-size: 22px;
+    }
+
+    .btn-perfil {
+        padding: 12px 20px;
+        font-size: 13px;
+    }
 }
